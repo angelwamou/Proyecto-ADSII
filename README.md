@@ -1,23 +1,29 @@
-Pasos Realizados
-1. Estructura Inicial del Proyecto
-Se crearon los archivos base:
+Calculadora Web Mejorada
+Calculadora Preview (Reemplazar con captura real)
 
-✅ inicio.html: Estructura semántica de la calculadora.
+Una calculadora web interactiva con operaciones básicas, validación de entradas y diseño responsive, desarrollada con HTML, CSS y JavaScript.
 
-✅ style.css: Diseño responsive y estilos visuales.
+📌 Características Mejoradas
+✅ Validaciones Robustas
+Evita múltiples puntos decimales (ej: 5.2.3 → Error).
 
-✅ script.js: Lógica de operaciones y eventos.
+Bloquea operadores consecutivos (ej: 5++3 → Error).
 
-2. Desarrollo y Correcciones
-Problema Detectado	Solución Implementada
-La tecla × (multiplicación) no era interpretada por JavaScript.	Se reemplazó × por * internamente usando replace().
-Entradas como 3..5 o */ causaban errores.	Se añadió try-catch para mostrar "Error" en pantalla.
-El botón = ejecutaba operaciones incompletas (ej: 5+).	Validación de la expresión antes de usar eval().
-3. Mejoras Adicionales
-Consolidación de funciones:
+Maneja división por cero (5/0 → "Error: Div/0").
 
-Unificación de la lógica en agregar(), calcular() y limpiar().
+🎨 Diseño Mejorado
+Interfaz moderna con botones intuitivos.
 
-Experiencia de usuario:
+Efectos hover y feedback visual al presionar teclas.
 
-Color de botones cambia al hover (:hover en CSS).
+Responsive (funciona en móviles y desktop).
+
+⌨️ Soporte para Teclado
+Teclas numéricas (0-9) y operadores (+, -, *, /).
+
+Enter para calcular, Backspace/Delete para borrar.
+
+🔢 Resultados Precisos
+Limita decimales a 8 dígitos (evita 0.30000000000000004).
+
+Evita notación científica en números grandes.
