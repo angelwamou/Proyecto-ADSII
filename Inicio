@@ -28,7 +28,6 @@
             <button onclick="agregar('0')">0</button>
             <button onclick="agregar('.')">.</button>
             <button onclick="calcular()">=</button>
-            <button onclick="agregar('*')">×</button>
         </div>
     </div>
     <script src="script.js"></script>
